@@ -1,0 +1,152 @@
+* {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  background-color: #dddddd; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 800px; }
+
+#info {
+  position: relative;
+  left: 11.1%;
+  width: inherit;
+  box-sizing: border-box; }
+  #info #element-large {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16.65%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 15px;
+    background-color: #86d3da; }
+    #info #element-large:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+    #info #element-large h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      margin: 0px; }
+    #info #element-large p {
+      position: absolute;
+      margin: 0px; }
+      #info #element-large p#atomic-number {
+        left: 100%;
+        transform: translateX(-100%) translate(-5px, 5px); }
+      #info #element-large p#atomic-name {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%); }
+      #info #element-large p#atomic-weight {
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%); }
+  #info #element-groups {
+    position: absolute;
+    left: 16.65%;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 38.85%; }
+    #info #element-groups:before {
+      content: "";
+      display: block;
+      padding-top: 42.85%; }
+    #info #element-groups #group-wrapper {
+      position: absolute;
+      width: 100%;
+      transform: translateY(-100%); }
+      #info #element-groups #group-wrapper div {
+        margin: 0px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #dddddd;
+        position: relative; }
+        #info #element-groups #group-wrapper div:before {
+          content: "";
+          display: block;
+          padding-top: 15%; }
+        #info #element-groups #group-wrapper div p {
+          margin: 0px;
+          font-size: 0.75em;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transform: translate(0, -50%);
+          padding-left: 15px; }
+
+.cell {
+  width: 5.55%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+  position: relative;
+  float: left; }
+  .cell:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+  .cell:hover {
+    border: 2px solid #555555; }
+  .cell p {
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    display: block;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%); }
+
+.offset-16 {
+  margin-left: 88.8%; }
+
+.offset-10 {
+  margin-left: 55.5%; }
+
+.offset-3 {
+  margin-left: 16.65%; }
+
+.nonmetal {
+  background-color: #86d3da; }
+
+.halogen {
+  background-color: #da89da; }
+
+.alkali {
+  background-color: #6a9dba; }
+
+.transition {
+  background-color: #b0d0a1; }
+
+.alkaline {
+  background-color: #baa1ff; }
+
+.posttrans {
+  background-color: #8b85b8; }
+
+.noblegas {
+  background-color: #559e83; }
+
+.lanthanoid {
+  background-color: #c3cb71; }
+
+.metalloid {
+  background-color: #ce7a61; }
+
+.actinoid {
+  background-color: #c59e83; }
+
+/*# sourceMappingURL=style.css.map */

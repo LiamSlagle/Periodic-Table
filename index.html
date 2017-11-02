@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basics -->
+		<title>Periodic Table</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS -->
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div id="wrapper">
+				<div id="info">
+					<div id="element-large">
+						<p id="atomic-number">{{ atomicNumber }}</p>
+						<h1 id="atomic-symbol">{{ atomicSymbol }}</h1>
+						<p id="atomic-name">{{ atomicName }}</p>
+						<p id="atomic-weight">{{ atomicWeight }}</p>
+					</div>
+					<div id="element-groups">
+						<div id="group-wrapper">
+							<div class="nonmetal"><p>Other Nonmetals</p></div>
+							<div class="halogen"><p>Halogens</p></div>
+							<div class="alkali"><p>Alkali Metals</p></div>
+							<div class="transition"><p>Transition Metals</p></div>
+							<div class="alkaline"><p>Alkaline Earth Metals</p></div>
+							<div class="posttrans"><p>Post-Transition Metals</p></div>
+							<div class="noblegas"><p>Noble Gases</p></div>
+							<div class="lanthanoid"><p>Lanthanoids</p></div>
+							<div class="metalloid"><p>Metalloids</p></div>
+							<div class="actinoid"><p>Actinoids</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(1)" class="cell nonmetal"><p>H</p></div>
+					<div v-on:click="updateInfo(2)" class="cell noblegas offset-16"><p>He</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(3)" class="cell alkali"><p>Li</p></div>
+					<div v-on:click="updateInfo(4)" class="cell alkaline"><p>Be</p></div>
+
+					<div v-on:click="updateInfo(5)" class="cell metalloid offset-10"><p>B</p></div>
+					<div v-on:click="updateInfo(6)" class="cell nonmetal"><p>C</p></div>
+					<div v-on:click="updateInfo(7)" class="cell nonmetal"><p>N</p></div>
+					<div v-on:click="updateInfo(8)" class="cell nonmetal"><p>O</p></div>
+					<div v-on:click="updateInfo(9)" class="cell halogen"><p>F</p></div>
+					<div v-on:click="updateInfo(10)" class="cell noblegas"><p>Ne</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(11)" class="cell alkali"><p>Na</p></div>
+					<div v-on:click="updateInfo(12)" class="cell alkaline"><p>Mg</p></div>
+
+					<div v-on:click="updateInfo(13)" class="cell posttrans offset-10"><p>Al</p></div>
+					<div v-on:click="updateInfo(14)" class="cell metalloid"><p>Si</p></div>
+					<div v-on:click="updateInfo(15)" class="cell nonmetal"><p>P</p></div>
+					<div v-on:click="updateInfo(16)" class="cell nonmetal"><p>S</p></div>
+					<div v-on:click="updateInfo(17)" class="cell halogen"><p>Cl</p></div>
+					<div v-on:click="updateInfo(18)" class="cell noblegas"><p>Ar</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(19)" class="cell alkali"><p>K</p></div>
+					<div v-on:click="updateInfo(20)" class="cell alkaline"><p>Ca</p></div>
+					<div v-on:click="updateInfo(21)" class="cell transition"><p>Sc</p></div>
+					<div v-on:click="updateInfo(22)" class="cell transition"><p>Ti</p></div>
+					<div v-on:click="updateInfo(23)" class="cell transition"><p>V</p></div>
+					<div v-on:click="updateInfo(24)" class="cell transition"><p>Cr</p></div>
+					<div v-on:click="updateInfo(25)" class="cell transition"><p>Mn</p></div>
+					<div v-on:click="updateInfo(26)" class="cell transition"><p>Fe</p></div>
+					<div v-on:click="updateInfo(27)" class="cell transition"><p>Co</p></div>
+					<div v-on:click="updateInfo(28)" class="cell transition"><p>Ni</p></div>
+					<div v-on:click="updateInfo(29)" class="cell transition"><p>Cu</p></div>
+					<div v-on:click="updateInfo(30)" class="cell transition"><p>Zn</p></div>
+					<div v-on:click="updateInfo(31)" class="cell posttrans"><p>Ga</p></div>
+					<div v-on:click="updateInfo(32)" class="cell metalloid"><p>Ge</p></div>
+					<div v-on:click="updateInfo(33)" class="cell metalloid"><p>As</p></div>
+					<div v-on:click="updateInfo(34)" class="cell nonmetal"><p>Se</p></div>
+					<div v-on:click="updateInfo(35)" class="cell halogen"><p>Br</p></div>
+					<div v-on:click="updateInfo(36)" class="cell noblegas"><p>Kr</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(37)" class="cell alkali"><p>Rb</p></div>
+					<div v-on:click="updateInfo(38)" class="cell alkaline"><p>Sr</p></div>
+					<div v-on:click="updateInfo(39)" class="cell transition"><p>Y</p></div>
+					<div v-on:click="updateInfo(40)" class="cell transition"><p>Zr</p></div>
+					<div v-on:click="updateInfo(41)" class="cell transition"><p>Nb</p></div>
+					<div v-on:click="updateInfo(42)" class="cell transition"><p>Mo</p></div>
+					<div v-on:click="updateInfo(43)" class="cell transition"><p>Tc</p></div>
+					<div v-on:click="updateInfo(44)" class="cell transition"><p>Ru</p></div>
+					<div v-on:click="updateInfo(45)" class="cell transition"><p>Rh</p></div>
+					<div v-on:click="updateInfo(46)" class="cell transition"><p>Pd</p></div>
+					<div v-on:click="updateInfo(47)" class="cell transition"><p>Ag</p></div>
+					<div v-on:click="updateInfo(48)" class="cell transition"><p>Cd</p></div>
+					<div v-on:click="updateInfo(49)" class="cell posttrans"><p>In</p></div>
+					<div v-on:click="updateInfo(50)" class="cell posttrans"><p>Sn</p></div>
+					<div v-on:click="updateInfo(51)" class="cell metalloid"><p>Sb</p></div>
+					<div v-on:click="updateInfo(52)" class="cell metalloid"><p>Te</p></div>
+					<div v-on:click="updateInfo(53)" class="cell halogen"><p>I</p></div>
+					<div v-on:click="updateInfo(54)" class="cell noblegas"><p>Ze</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(55)" class="cell alkali"><p>Cs</p></div>
+					<div v-on:click="updateInfo(56)" class="cell alkaline"><p>Ba</p></div>
+					<div v-on:click="" class="cell lanthanoid"><p>La</p></div>
+					<div v-on:click="updateInfo(72)" class="cell transition"><p>Hf</p></div>
+					<div v-on:click="updateInfo(73)" class="cell transition"><p>Ta</p></div>
+					<div v-on:click="updateInfo(74)" class="cell transition"><p>W</p></div>
+					<div v-on:click="updateInfo(75)" class="cell transition"><p>Re</p></div>
+					<div v-on:click="updateInfo(76)" class="cell transition"><p>Os</p></div>
+					<div v-on:click="updateInfo(77)" class="cell transition"><p>Ir</p></div>
+					<div v-on:click="updateInfo(78)" class="cell transition"><p>Pt</p></div>
+					<div v-on:click="updateInfo(79)" class="cell transition"><p>Au</p></div>
+					<div v-on:click="updateInfo(80)" class="cell transition"><p>Hg</p></div>
+					<div v-on:click="updateInfo(81)" class="cell posttrans"><p>Tl</p></div>
+					<div v-on:click="updateInfo(82)" class="cell posttrans"><p>Pb</p></div>
+					<div v-on:click="updateInfo(83)" class="cell posttrans"><p>Bi</p></div>
+					<div v-on:click="updateInfo(84)" class="cell metalloid"><p>Po</p></div>
+					<div v-on:click="updateInfo(85)" class="cell halogen"><p>At</p></div>
+					<div v-on:click="updateInfo(86)" class="cell noblegas"><p>Rn</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(87)" class="cell alkali"><p>Fr</p></div>
+					<div v-on:click="updateInfo(88)" class="cell alkaline"><p>Ra</p></div>
+					<div v-on:click="" class="cell actinoid"><p>Ac</p></div>
+					<div v-on:click="updateInfo(104)" class="cell transition"><p>Rf</p></div>
+					<div v-on:click="updateInfo(105)" class="cell transition"><p>Db</p></div>
+					<div v-on:click="updateInfo(106)" class="cell transition"><p>Sg</p></div>
+					<div v-on:click="updateInfo(107)" class="cell transition"><p>Bh</p></div>
+					<div v-on:click="updateInfo(108)" class="cell transition"><p>Hs</p></div>
+					<div v-on:click="updateInfo(109)" class="cell transition"><p>Mt</p></div>
+					<div v-on:click="updateInfo(110)" class="cell transition"><p>Ds</p></div>
+					<div v-on:click="updateInfo(111)" class="cell transition"><p>Rg</p></div>
+					<div v-on:click="updateInfo(112)" class="cell transition"><p>Cn</p></div>
+					<div v-on:click="updateInfo(113)" class="cell posttrans"><p>Nh</p></div>
+					<div v-on:click="updateInfo(114)" class="cell posttrans"><p>Fl</p></div>
+					<div v-on:click="updateInfo(115)" class="cell posttrans"><p>Mc</p></div>
+					<div v-on:click="updateInfo(116)" class="cell posttrans"><p>Lv</p></div>
+					<div v-on:click="updateInfo(117)" class="cell halogen"><p>Ts</p></div>
+					<div v-on:click="updateInfo(118)" class="cell noblegas"><p>Og</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(57)" class="cell lanthanoid offset-3"><p>La</p></div>
+					<div v-on:click="updateInfo(58)" class="cell lanthanoid"><p>Ce</p></div>
+					<div v-on:click="updateInfo(59)" class="cell lanthanoid"><p>Pr</p></div>
+					<div v-on:click="updateInfo(60)" class="cell lanthanoid"><p>Nd</p></div>
+					<div v-on:click="updateInfo(61)" class="cell lanthanoid"><p>Pm</p></div>
+					<div v-on:click="updateInfo(62)" class="cell lanthanoid"><p>Sm</p></div>
+					<div v-on:click="updateInfo(63)" class="cell lanthanoid"><p>Eu</p></div>
+					<div v-on:click="updateInfo(64)" class="cell lanthanoid"><p>Gd</p></div>
+					<div v-on:click="updateInfo(65)" class="cell lanthanoid"><p>Tb</p></div>
+					<div v-on:click="updateInfo(66)" class="cell lanthanoid"><p>Dy</p></div>
+					<div v-on:click="updateInfo(67)" class="cell lanthanoid"><p>Ho</p></div>
+					<div v-on:click="updateInfo(68)" class="cell lanthanoid"><p>Er</p></div>
+					<div v-on:click="updateInfo(69)" class="cell lanthanoid"><p>Tm</p></div>
+					<div v-on:click="updateInfo(70)" class="cell lanthanoid"><p>Yb</p></div>
+					<div v-on:click="updateInfo(71)" class="cell lanthanoid"><p>Lu</p></div>
+				</div>
+				<div class="row">
+					<div v-on:click="updateInfo(89)" class="cell actinoid offset-3"><p>Ac</p></div>
+					<div v-on:click="updateInfo(90)" class="cell actinoid"><p>Th</p></div>
+					<div v-on:click="updateInfo(91)" class="cell actinoid"><p>Pa</p></div>
+					<div v-on:click="updateInfo(92)" class="cell actinoid"><p>U</p></div>
+					<div v-on:click="updateInfo(93)" class="cell actinoid"><p>Np</p></div>
+					<div v-on:click="updateInfo(94)" class="cell actinoid"><p>Pu</p></div>
+					<div v-on:click="updateInfo(95)" class="cell actinoid"><p>Am</p></div>
+					<div v-on:click="updateInfo(96)" class="cell actinoid"><p>Cm</p></div>
+					<div v-on:click="updateInfo(97)" class="cell actinoid"><p>Bk</p></div>
+					<div v-on:click="updateInfo(98)" class="cell actinoid"><p>Cf</p></div>
+					<div v-on:click="updateInfo(99)" class="cell actinoid"><p>Es</p></div>
+					<div v-on:click="updateInfo(100)" class="cell actinoid"><p>Fm</p></div>
+					<div v-on:click="updateInfo(101)" class="cell actinoid"><p>Md</p></div>
+					<div v-on:click="updateInfo(102)" class="cell actinoid"><p>No</p></div>
+					<div v-on:click="updateInfo(103)" class="cell actinoid"><p>Lr</p></div>
+				</div>
+			</div>
+		</div>
+
+	    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/code.js"></script>
+	</body>
+</html>
